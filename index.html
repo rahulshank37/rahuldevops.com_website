@@ -1,1 +1,23 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>YourSite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">YourSite</a>
+    </div>
+  </nav>
+  <main class="container py-5">
+    <h1 class="mb-3">Welcome to Your Domain</h1>
+    <p class="lead">This is a simple static landing page hosted on Azure Static Web Apps.</p>
+    <a class="btn btn-primary" href="https://mytodoapp12345678.azurewebsites.net/todos" target="_blank">Open To-Do App</a>
+  </main>
+  <footer class="text-center py-4">© <span id="year"></span> YourSite</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
